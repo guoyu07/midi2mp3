@@ -1,0 +1,12 @@
+runtime "python"
+full_remote_build 'true'
+
+
+exec "Midi2Wav.py"
+
+deb 'http://mirror.pnl.gov/ubuntu//pool/universe/f/fluidsynth/fluidsynth_1.1.5-2_amd64.deb'
+deb 'http://mirror.pnl.gov/ubuntu//pool/universe/f/fluidsynth/libfluidsynth1_1.1.5-2_amd64.deb'
+
+file "midifetch.py"
+file "https://dl.dropbox.com/u/44657449/PC51d.sf2"
+dir "cloudfiles"
